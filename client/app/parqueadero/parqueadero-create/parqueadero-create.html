@@ -1,1 +1,20 @@
-<div>This is the parqueadero-create view.</div>
+<div class="container">
+	<form ng-submit="vm.createParqueo()">
+		<legend class="text-danger text-center">Registrar Parqueo</legend>
+	
+		<div class="form-group">
+			<label name="input1">Placa_Carro</label>
+			<input type="text" id="input1" class="form-control" ng-model="vm.carro.placaCarro">
+		</div>
+	
+		<div class="form-group">
+			<label name="input2">Hora_Llegada</label>
+			<input type="number" id="input2" class="form-control" ng-model="vm.carro.horaLlegada">
+		</div>		
+	
+		<button type="submit" class="btn btn-primary">Parquear</button>
+	</form>
+	
+
+
+</div>
