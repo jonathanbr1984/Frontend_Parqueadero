@@ -1,0 +1,24 @@
+<div class="container">
+	<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>Id</th>
+						<th>Tarifa</th>
+						<th>Hora_Apertura</th>
+						<th>Hora_Cierre</th>
+						<th>Hora_Actual</th>
+						<th>Caja</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="item in vm.parqueadero">
+						<td>{{item.id}}</td>
+						<td>{{item.tarifa}}</td>
+						<td>{{item.horaApertura}}</td>
+						<td>{{item.horaCierre}}</td>
+						<td>{{item.horaActual}}</td>
+						<td>{{item.caja}}</td>
+					</tr>
+				</tbody>
+			</table>		
+</div>

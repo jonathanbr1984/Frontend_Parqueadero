@@ -1,0 +1,20 @@
+<div class="cantainer">
+	<table class="table table-striped table-hover">
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Numero_Puesto</th>
+				<th>Parqueadero</th>
+				<th>Carro</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="item in vm.puesto">
+				<td>{{item.id}}</td>
+				<td>{{item.numeroPuesto}}</td>
+				<td>{{item.idParqueadero.id}}</td>
+				<td>{{item.carro.placaCarro}}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
